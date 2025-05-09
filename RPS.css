@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    background-color: #235789;
+    color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.CHOICES {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.choice {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #235789;
+    transform: scale(1.1);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+#user, #computer {
+    font-size: 2.5rem;
+}
+
+.msgcontainer {
+    margin-top: 2rem;
+}
+
+#msg {
+    background-color: #235789;
+    color: white;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+    #user, #computer {
+        font-size: 2rem;
+    }
+
+    .scoreboard {
+        gap: 2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
